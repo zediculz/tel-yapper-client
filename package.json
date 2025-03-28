@@ -16,7 +16,7 @@
     "require": "./dist/telyapper.umd.cjs"
   },
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --port 7373",
     "build": "vite build"
   },
   "devDependencies": {

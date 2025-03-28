@@ -4,7 +4,8 @@ import TeleYapper  from './lib/main.js'
 
 const tele = new TeleYapper()
 
-//let res = await tele.check("channel", "Logyapper ch")
+let res = await tele.check("channel", "Logyapper ch")
+//console.log(res)
 
 const s = await tele.send('message example', {
     id: 12345,
@@ -16,8 +17,10 @@ const s = await tele.send('message example', {
 
 const ss = await tele.direct("direct msg example", {
     type: "channel",
-    chat: "Logyapperch"
+    chat: "Logyapperch",
+    mode: "order"
 })
 
-console.log(ss)
+tele.flush()
+//console.log(ss)
 console.log(tele)
