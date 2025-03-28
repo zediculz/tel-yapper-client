@@ -8,17 +8,17 @@ var y = (n, e, t) => {
   e instanceof WeakSet ? e.add(n) : e.set(n, t);
 };
 var o = (n, e, t) => (f(n, e, "access private method"), t);
-const m = "https://tel-yapper-81.deno.dev", w = {
+const w = "https://tel-yapper-81.deno.dev", m = {
   Accept: "*/*",
   "User-Agent": "Tel Yapper Client",
   "Content-Type": "application/x-www-form-urlencoded"
 };
 async function p(n, e) {
-  const t = `${m}${n}`;
+  const t = `${w}${n}`;
   return await (await fetch(t, {
     method: "POST",
     body: e,
-    headers: w
+    headers: m
   })).json();
 }
 async function b(n, e) {
@@ -34,7 +34,7 @@ async function k(n, e, t, s) {
   return await p("/botd", a);
 }
 var r, h;
-class x {
+class C {
   constructor() {
     /**@param private */
     y(this, r);
@@ -83,6 +83,7 @@ r = new WeakSet(), h = function() {
     }
   };
 };
+window.TeleYapper = C;
 export {
-  x as default
+  C as default
 };
