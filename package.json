@@ -1,0 +1,25 @@
+{
+  "name": "tel-yapper-client",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "files": [
+    "dist",
+    "index.d.ts"
+  ],
+  "main": "./dist/telyapper.umd.cjs",
+  "module": "./dist/telyapper.js",
+  "types": "./index.d.ts",
+  "exports": {
+    "types": "./index.d.ts",
+    "import": "./dist/telyapper.js",
+    "require": "./dist/telyapper.umd.cjs"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "devDependencies": {
+    "vite": "^6.1.1"
+  }
+}
