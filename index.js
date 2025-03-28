@@ -24,3 +24,6 @@ const ss = await tele.direct("direct msg example", {
 tele.flush()
 //console.log(ss)
 console.log(tele)
+
+
+console.log(window.TeleYapper)
