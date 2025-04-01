@@ -1,29 +1,25 @@
 
-import TeleYapper  from './lib/main.js'
-
+import TeleYapper from "./lib/main.js"
 
 const tele = new TeleYapper()
 
-let res = await tele.check("channel", "Logyapper ch")
-//console.log(res)
+//let r = await tele.check("group", "LogYapper Test")
+//let rr = await tele.check("channel", "Logyapper ch")
 
-const s = await tele.send('message example', {
-    id: 12345,
+
+const s = await tele.send('message ggg example', {
+    id: -1002623552220,
+    mode: "error"
+})
+
+console.log(s)
+
+/*
+const ss = await tele.direct("direct example", {
+    type: "group",
+    chat: "LogYapper Test",
     mode: "order"
 })
 
-//console.log(s)
-
-
-const ss = await tele.direct("direct msg example", {
-    type: "channel",
-    chat: "Logyapperch",
-    mode: "order"
-})
-
-tele.flush()
-//console.log(ss)
-console.log(tele)
-
-
-console.log(window.TeleYapper)
+console.log(ss)
+*/

@@ -1,19 +1,20 @@
 {
-  "name": "tel-yapper-client",
-  "private": true,
-  "version": "0.0.1",
+  "name": "yapper-bot",
+  "description": "yapperbot is a telegram logging bot",
+  "private": false,
+  "version": "0.1.0",
   "type": "module",
   "files": [
     "dist",
     "index.d.ts"
   ],
-  "main": "./dist/telyapper.umd.cjs",
-  "module": "./dist/telyapper.js",
+  "main": "./dist/yapperbot.umd.cjs",
+  "module": "./dist/yapperbot.js",
   "types": "./index.d.ts",
   "exports": {
     "types": "./index.d.ts",
-    "import": "./dist/telyapper.js",
-    "require": "./dist/telyapper.umd.cjs"
+    "import": "./dist/yapperbot.js",
+    "require": "./dist/yapperbot.umd.cjs"
   },
   "scripts": {
     "dev": "vite --port 7373",
@@ -21,5 +22,8 @@
   },
   "devDependencies": {
     "vite": "^6.1.1"
+  },
+  "dependencies": {
+    "yapper-bot": "^0.0.1"
   }
 }
