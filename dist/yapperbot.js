@@ -15,7 +15,7 @@ const m = "https://tel-yapper-81.deno.dev", w = {
 };
 async function p(n, e) {
   const t = `${m}${n}`;
-  return console.log(t), await (await fetch(t, {
+  return await (await fetch(t, {
     method: "POST",
     body: e,
     headers: w
